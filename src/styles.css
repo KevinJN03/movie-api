@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;;
+}
+html{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+}
+header {
+    margin: 0;
+    padding: 0;
+    background: black;
+    width: 100vw;
+    height: 15vh;
+}
+header h1 {
+    color: white;
+
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    
+    padding: 50px;
+}
+
+.card-container {
+    background-color: #838383;
+    padding: 15px;
+    border-radius: 30px;
+    height: 520px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    min-width: auto;
+    max-width: 280px;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    
+    align-items: center;
+}
+.inner-Container img {
+    
+    max-width: 300px;
+    max-height: 350px;
+    border-radius: 25px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    object-fit:cover;
+}
+
+.info-container ul li h2 {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+
+
+}
+
+
+.inner-Container {
+
+    align-items: center;
+
+    
+}
+.info-container li::marker{
+    content: none;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.info-container ul{
+    
+    padding: 0%;
+
+}
+.info-container ul li{
+   
+}
+.info-container {
+ height: 4000px;
+
+}
+
+.info-container ul li h3 {
+
+}
