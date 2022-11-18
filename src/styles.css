@@ -18,7 +18,6 @@ header {
     height: 20vh;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
 
 }
@@ -46,23 +45,25 @@ justify-content: center;
 }
 .search-bar{
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 60px;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     background: darkgray;
     backdrop-filter: blur(4px)saturate(180%);
+    border: 0px;
 }
 
 .search-bar input {
-    background: transparent;
+    background: darkgray;
     flex: 1;
     border: 0;
+    border-radius: 30px;
     outline: none;
-    padding: 24px 20px;
+    padding: 14px 20px;
     font-size: 20px;
-    color: orange
+    color: white
 }
 ::placeholder {
     color: white
@@ -75,7 +76,7 @@ justify-content: center;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background-color: aqua;
+    background-color: white;
     cursor: pointer;
 }
 .movie-container {
@@ -88,7 +89,7 @@ justify-content: center;
 }
 
 .card-container {
-    background-color: #838383;
+    background-color: rgba(179, 175, 175, 0.6);
     padding: 15px;
     border-radius: 30px;
     height: 520px;
@@ -113,21 +114,31 @@ justify-content: center;
     
     object-fit:cover;
 }
+.info-container {
+    height: auto;
+
+   
+   }
+   
 
 .info-container ul li h2 {
     color: white;
+    background-color: black;
+    border-radius: 25px;
+    padding: 30px;
+    min-height: 70px;
+    height: auto;
     text-align: center;
     font-weight: 600;
-
+display:inline-block;
 
 }
 
+.secondli {
+background: white;
+border-radius: 25px;
+padding: 10px 0px
 
-.inner-Container {
-
-    align-items: center;
-
-    
 }
 .info-container li::marker{
     content: none;
@@ -143,13 +154,7 @@ body {
     padding: 0%;
 
 }
-.info-container ul li{
-   
-}
-.info-container {
- height: 4000px;
 
-}
 
 .info-container ul li h3 {
 

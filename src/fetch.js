@@ -82,13 +82,16 @@ moviecontainer.removeChild(oldresults);
 				//appends
 				innerContainer.append(img)
 				
-			    h2.append(name)
-			    h3.append(type)
-			    secondh3.append(yearrelease)
-			    thirdh3.append(rank)
+			    h2.append(`Title: ${name}`)
+			    h3.append(`Type: ${type}`)
+			    secondh3.append(`Year Release: ${yearrelease}`)
+			    thirdh3.append(`Rank: ${rank}`)
 				
-		    li.append(h2, h3, secondh3 ,thirdh3)
-		    ul.append(li)
+				const li2 = document.createElement("li")
+				li2.classList.add("secondli")
+				li2.append(h3, secondh3 ,thirdh3)
+						li.append(h2)
+						ul.append(li,li2)
 				
 			infoContainer.append(ul)
 			modalcontent.append(span, p)
