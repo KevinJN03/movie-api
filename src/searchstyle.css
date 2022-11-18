@@ -35,3 +35,10 @@
     text-decoration: none;
     cursor: pointer;
   }
+  
+  .modal{
+    display: none;
+  }
+  #mybtn{
+    display: none;
+  }

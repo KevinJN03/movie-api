@@ -1,4 +1,6 @@
 // const fetch = require("isomorphic-fetch")
+const input = document.querySelector("input");
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -7,11 +9,18 @@ const options = {
 	}
 };
 
+function clear() {
+
+	let moviecontainer = document.querySelector(".movie-container")
+	let oldresults = document.querySelector("cardContainer");
+  if (oldresults) {
+moviecontainer.removeChild(oldresults);
+}
+}
 
 
-const input = document.querySelector("input");
 	async function gettingmovie(){
-		
+		clear()
 		const response = await fetch(`https://online-movie-database.p.rapidapi.com/auto-complete?q=${input.value}`, options)
 		const data = await response.json();
 		const list = data.d
@@ -49,7 +58,7 @@ const input = document.querySelector("input");
 			
 					// for each item i want to create a button that have thier info
 					
-				
+			
 			
 			
 			
@@ -91,7 +100,7 @@ const input = document.querySelector("input");
 			  card.append(innerContainer, infoContainer)
 			moviecontainer.append(card)
 			
-			
+	
 		})
 		}
 		
@@ -104,3 +113,16 @@ event.preventDefault();
 	gettingmovie()
   });	
 
+// code for 
+const main = document.querySelector("main")
+const searchbtns = document.querySelector("#searchButton")
+const span2 = document.querySelector("#span2")
+
+//function to display the main when the searhc button is clicked
+function openwhenclicked(){
+searchbtns.onclick = function(){
+	return main.style.display = "block";	
+}
+
+}
+openwhenclicked()
