@@ -1,4 +1,4 @@
-// const fetch = require("isomorphic-fetch")
+
 const input = document.querySelector("input");
 
 const options = {
@@ -17,8 +17,6 @@ function clear() {
 moviecontainer.removeChild(oldresults);
 }
 }
-
-
 	async function gettingmovie(){
 		clear()
 		const response = await fetch(`https://online-movie-database.p.rapidapi.com/auto-complete?q=${input.value}`, options)
@@ -31,9 +29,6 @@ moviecontainer.removeChild(oldresults);
 			const yearrelease = item.y
 			const type = item.q
 			//modal button
-
-			
-			
 			
 			const modal = document.querySelector(".modal")
 		const modalbtn = document.createElement("button")
@@ -49,19 +44,7 @@ moviecontainer.removeChild(oldresults);
 			// p section
 			const p = document.createElement("p")
 			p.innerHTML = `<li><h2>Name: ${name}</h2><h2>Rank: ${rank}</h2><h2>Year of Release: ${yearrelease}</h2><h2>Type ${type}</h2></li>`
-			//Modal Button Section
-			
-			
-			
-			
-
-			
-					// for each item i want to create a button that have thier info
 					
-			
-			
-			
-			
 			const moviecontainer = document.querySelector(".movie-container")
 				const ul = document.createElement("ul")
 				const li = document.createElement("li")
@@ -79,10 +62,9 @@ moviecontainer.removeChild(oldresults);
 				innerContainer.classList.add("inner-Container")
 			img.src = image
 
-				//appends
 				innerContainer.append(img)
 				
-			    h2.append(`Title: ${name}`)
+			    h2.append(`${name}`)
 			    h3.append(`Type: ${type}`)
 			    secondh3.append(`Year Release: ${yearrelease}`)
 			    thirdh3.append(`Rank: ${rank}`)
@@ -106,8 +88,6 @@ moviecontainer.removeChild(oldresults);
 	
 		})
 		}
-		
-
 
 const form = document.querySelector("form")
 
@@ -116,12 +96,12 @@ event.preventDefault();
 	gettingmovie()
   });	
 
-// code for 
+
 const main = document.querySelector("main")
 const searchbtns = document.querySelector("#searchButton")
 const span2 = document.querySelector("#span2")
 
-//function to display the main when the searhc button is clicked
+
 function openwhenclicked(){
 searchbtns.onclick = function(){
 	return main.style.display = "block";	
