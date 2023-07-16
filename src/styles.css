@@ -27,7 +27,7 @@ header h1 {
 }
 main {
     display: none;
-    background-image: url(../images/marcel-strauss-S-FwbFOoBPI-unsplash.jpg) ;
+    background-image: url(./images/glass.jpg) ;
     background-position: center;
     background-size: cover;
     backdrop-filter: blur(4px) brightness(1.24) contrast(97%) grayscale(21%) hue-rotate(360deg) saturate(300%) sepia(100%)
@@ -40,6 +40,7 @@ padding: 5%;
 align-items: center;
 display: flex;
 justify-content: center;
+
 
 
 }
@@ -80,8 +81,8 @@ justify-content: center;
     cursor: pointer;
 }
 .movie-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
     text-align: center;
     justify-content: center;
     
@@ -104,10 +105,10 @@ justify-content: center;
 }
 .inner-Container img {
     
-    max-width: 300px;
+    max-width:250px;
     max-height: 350px;
     border-radius: 25px;
-    
+    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -116,6 +117,9 @@ justify-content: center;
 }
 .info-container {
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
    
    }
@@ -130,14 +134,18 @@ justify-content: center;
     height: auto;
     text-align: center;
     font-weight: 600;
-display:inline-block;
+/* display:inline-block; */
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
 
 .secondli {
 background: white;
 border-radius: 25px;
-padding: 10px 0px
+padding: 10px 20px;
+width: auto;
 
 }
 .info-container li::marker{
@@ -154,10 +162,4 @@ body {
     padding: 0%;
 
 }
-
-
-.info-container ul li h3 {
-
-}
-
 

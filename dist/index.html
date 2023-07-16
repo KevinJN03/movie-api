@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles.css">  -->
+    <script src="./main.js" defer></script>
+    <title>Movies</title>
+  </head>
+  <body>
+    <header>
+      <search-container class="search-container">
+        <searchbar class="search-bar">
+          <form>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Search Movie"
+            />
+            <button id="searchButton" type="submit">
+              <img src="./images/icons8-search-50.png" id="icon" />
+            </button>
+          </form>
+        </searchbar>
+      </search-container>
+    </header>
+
+    <main>
+      <div id="myModal" class="modal"></div>
+      <section class="movie-container"></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
